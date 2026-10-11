@@ -8,6 +8,8 @@ What we must confront is not superficial improvement, but the transformation of 
 
 To drive this movement forward with conviction, we propose the "AI-Driven Development Manifesto" as a guidepost for the path we should follow.
 
+This manifesto sets out principles and values that hold even as technology changes. Specific tools and methods are maintained separately, and updated continuously, in the "[AI-Driven Development Practice Guide](./PRACTICES.en.md)."
+
 ## Definition: What Is AI-Driven Development?
 
 > An approach that redesigns the entire software development lifecycle, including development processes and development organizations, in order to draw out the full capabilities of AI, with the aim of maximizing the value of digital products and solutions.
@@ -18,7 +20,7 @@ It is a redefinition of development processes and development organizations them
 AI-driven development is not a technique for applying AI development tools to existing development processes.
 It is a new approach that redesigns development processes and development organizations to draw out the full capabilities of generative AI and LLMs, with the aim of maximizing the value of digital products and digital solutions.
 
-The key premises of AI-driven development are set out below.
+## Principles
 
 ### [1] AI-driven development applies to every person and organization involved in digital products and solutions
 
@@ -29,27 +31,55 @@ AI-driven development is not an initiative for engineers alone. Every role invol
 The purpose of AI-driven development is not simply to improve development productivity, but to "maximize product value."
 Moreover, through integration with AI, not only the way software is built but the very nature of the product itself will change: from traditional "products built by human hands" to "products that AI and humans evolve together."
 
-### [3] Rather than humans being constantly involved, AI advances development autonomously and "asks humans to confirm what is necessary"
+### [3] AI executes, humans decide, and mechanisms verify
 
-A development process in which humans constantly instruct and intervene with AI agents cannot fully draw out AI's capabilities, and is insufficient for optimizing the software development lifecycle.
-As AI evolves, we will move toward a process in which AI advances development autonomously and "asks humans to confirm what is necessary."
+A development process in which humans constantly instruct and intervene with AI agents cannot fully draw out AI's capabilities.
+At the same time, the more productive AI becomes, the more humans checking every AI output one by one becomes a bottleneck in itself.
+
+We therefore divide the roles as follows:
+
+- **AI executes**: AI autonomously carries out the work of planning, design, implementation, testing, and operations
+- **Humans decide**: humans focus on the points that require human judgment, such as requirements, architecture, risk acceptance, and releases
+- **Mechanisms verify**: whatever can be verified mechanically, such as tests, static analysis, security scanning, and policy as code, is verified automatically by mechanisms
+- **Humans are responsible for the results**
+
 This applies to all processes, not only those for digital products and solutions.
 
-### [4] Future adaptation: prepare on the premise that AI will continue to evolve
+### [4] AI is not accountable. Final responsibility rests with people and organizations
+
+No matter how autonomously AI acts, AI is not an accountable party.
+People and organizations bear final responsibility for the deliverables AI generates or changes, and for their outcomes.
+We make clear who decided what, and who accepted what.
+
+### [5] "The AI said so" is not evidence
+
+We do not treat AI output as evidence in itself.
+We make decisions based on evidence that others can verify, such as official documentation, specifications, and test results.
+
+### [6] Deliverables produced by AI must be traceable too
+
+For deliverables that AI generates or changes, we make it possible to trace afterward what evidence they were based on, which instructions and context they came from, and whose decision adopted them.
+
+### [7] Rather than trusting AI, build mechanisms that detect and stop its mistakes
+
+We assume that AI will make mistakes.
+Rather than trusting that AI is correct, we put in place mechanisms that detect when AI makes a mistake and that stop and recover before the impact spreads.
+
+### [8] Future adaptation: prepare on the premise that AI will continue to evolve
 
 Generative AI and LLMs will continue to evolve.
 Models, algorithms, tools, and best practices change on a month-by-month basis.
-AI-driven development that anticipates such change requires the following "future-oriented preparation":
+On the premise of such change, we continuously carry out "future-oriented preparation" that does not depend on any particular tool:
 
-- Shifting to AI-readable information (specifications, design documents, etc.)
-- Building mechanisms that allow AI agents to access the company's business information (setting up local MCP)
-- Establishing guidelines for AI agents and building a platform for AI-driven development
-- Establishing an organization to promote AI-driven development and continuously updating knowledge
-- Building a security foundation for AI agents
+- Managing knowledge, specifications, and designs in a form AI can read
+- Building a foundation that lets AI agents access the information they need, safely
+- Creating an organization that promotes AI-driven development, and continuously updating knowledge
+- Defining new roles and careers
 
 ## Declaration
 
 We declare that we will transform every process in digital product and software development into one driven by AI. We will not carry forward labor-intensive development processes.
+At the same time, we will clearly separate what we entrust to AI from what humans decide and take responsibility for, and we will support verification with mechanisms.
 
 The differences between conventional development and "AI-driven development" are as follows.
 
@@ -58,35 +88,12 @@ The differences between conventional development and "AI-driven development" are
 | Perspective | Adopting AI development tools | Transforming development processes and organizations |
 | Process | Bolted onto existing processes; labor-intensive | Zero-based design premised on AI; autonomous |
 | Scope | Development phase only | The entire lifecycle related to digital products and solutions, from planning to operations |
-| Actor | Humans build, AI assists | AI agents advance development, humans confirm |
+| Actor | Humans build, AI assists | AI agents advance development, humans decide |
+| Verification | Humans review everything one by one | Mechanisms verify automatically, humans focus on decisions |
+| Responsibility | Whoever built it is responsible | Even when AI builds it, people and organizations are responsible |
+| Evidence | Individuals' experience and memory | Verifiable evidence and traceability |
 | Purpose | Cost reduction and shorter effort | Maximizing product value and competitiveness |
 | Documentation | Documents for humans to read | Knowledge for aligning understanding between AI and humans |
-
-## What to Work On Toward AI-Driven Development
-
-### [1] What needs to be done tactically in the near term
-
-- Adopting AI development tools (ChatGPT, Claude, Gemini, Copilot, etc.)
-- Adopting MCP
-- Establishing rules and context for AI agents
-- Formulating security guidelines
-- Participating in external communities
-
-### [2] What needs to be done early
-
-- Improving skills in using AI development tools
-- Shifting to AI-readable information (specifications, design documents, etc.)
-- Building mechanisms that allow AI agents to access the company's business information (setting up local MCP)
-- Establishing guidelines for AI agents and building a platform for AI-driven development
-- Redesigning an AI-driven development process suited to the company
-- Fostering an internal community
-
-### [3] What should be prepared strategically to secure a competitive advantage
-
-- Establishing an organization to promote AI-driven development and continuously updating knowledge
-- Establishing guidelines for AI agents and building a platform for AI-driven development
-- Building a security foundation for AI agents
-- Defining new roles for engineers, POs, and others involved in software development, and articulating career models
 
 ## Evolving Together with Generative AI
 
