@@ -100,4 +100,4 @@ The differences between conventional development and "AI-driven development" are
 "AI-driven development" is not merely an improvement to development methods.
 It is a redefinition of development processes and development organizations themselves, and an ongoing activity that keeps changing as generative AI evolves.
 
-Companies that "use" AI, and companies that "rebuild their processes and organizations on the premise of AI." In a few years, this gap will show up as an overwhelming, insurmountable difference in competitiveness.
+Will we merely use AI, or rebuild our processes and organizations on the premise of AI? That choice will determine our competitiveness from here on. We choose to rebuild.
